@@ -1,0 +1,6 @@
+title: "Compolymath"
+description: "I am going to generate a static site!"
+url: ""
+
+markdown: kramdown
+permalink: /blog/:title/
