@@ -4,47 +4,57 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
         {% if page.title %}
-            {{ page.title }} · {{ site.title }}
+        {{ page.title }} · {{ site.title }}
         {% else %}
-            {{ site.title }}
+        {{ site.title }}
         {% endif %}
     </title>
 
+    <!-- bootstrap styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- custom css styles -->
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <a href="{{ '/' | relative_url }}">
-            {{ site.title }}
-        </a>
+    <header>
+        <nav>
+            <a href="{{ '/' | relative_url }}">
+                {{ site.title }}
+            </a>
 
-        <a href="{{ '/about/' | relative_url }}">
-            About
-        </a>
+            <a href="{{ '/about/' | relative_url }}">
+                About
+            </a>
 
-        <a href="{{ '/blog/' | relative_url }}">
-            Blog
-        </a>
-    </nav>
-</header>
+            <a href="{{ '/blog/' | relative_url }}">
+                Blog
+            </a>
+        </nav>
+    </header>
 
-<main>
-    {{ content }}
-</main>
+    <main>
+        {{ content }}
+    </main>
 
-<footer>
-    <p>
-        © {{ 'now' | date: "%Y" }} {{ site.title }}
-    </p>
-</footer>
+    <footer>
+        <p>
+            © {{ 'now' | date: "%Y" }} {{ site.title }}
+        </p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
