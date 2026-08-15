@@ -1,6 +1,18 @@
+# Jekyll generated site
 _site/
-.sass-cache/
+
+# Jekyll cache
 .jekyll-cache/
 .jekyll-metadata
+
+# Sass cache
+.sass-cache/
+
+# Bundler
 .bundle/
 vendor/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
